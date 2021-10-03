@@ -38,8 +38,8 @@ export type Mutations = {
 
   [MutationType.SetLoading](state: State, value: boolean): void;
   [MutationType.SetCreateModal](state: State, value: boolean): void;
-  [MutationType.SetEditModal](state: State, value: {showModal: boolean, taskId: number|undefined}): void;
-  [MutationType.SetTaskModal](state: State, value: {showModal: boolean, taskId: number|undefined}): void;
+  [MutationType.SetEditModal](state: State, value: {showModal: boolean; taskId: number|undefined}): void;
+  [MutationType.SetTaskModal](state: State, value: {showModal: boolean; taskId: number|undefined}): void;
 };
 
 export const mutations: MutationTree<State> & Mutations = {

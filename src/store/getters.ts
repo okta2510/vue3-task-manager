@@ -2,9 +2,9 @@ import { GetterTree } from 'vuex'
 import { State, TaskItem } from './state'
 
 export type Getters = {
-  completedTaskCount(state: State): number
-  totalTaskCount(state: State): number
-  getTaskById(state: State): (id :number) => TaskItem | undefined
+  completedTaskCount(state: State): number;
+  totalTaskCount(state: State): number;
+  getTaskById(state: State): (id: number) => TaskItem | undefined;
 }
 
 export const getters: GetterTree<State, State> & Getters = {
